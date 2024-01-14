@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 80%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* header */
+
+/* navber part */
+
+.bx-menu {
+    display: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+    align-items: center;
+}
+
+.nav-items {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-items-1 {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-items li {
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+nav i {
+    font-size: 1.7rem;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: #3A3A3A;
+}
+
+.nav-logo h1 {
+    color: #3A3A3A;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* banner part */
+
+.banner {
+    display: flex;
+    align-items: center;
+    margin-top: 5rem;
+    gap: 5rem;
+}
+
+.banner .banner-colum-1 h1 {
+    color: #3A3A3A;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 70px;
+}
+
+.banner .banner-colum-1 p {
+    color: #3A3A3A;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 16px 0;
+}
+
+.banner-colum-1 .btn {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 41px;
+    background: #E02C6D;
+    padding: 10px 24px;
+    border: none;
+    display: flex;
+    gap: 8px;
+}
+
+.btn i {
+    font-size: 1.5rem;
+}
+
+.banner-colum-2 {
+    background-image: url(../images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* responsive */
+
+@media screen and (max-width: 576px) {
+    .container {
+        width: 90%;
+    }
+
+    .nav-items-1 {
+        display: none;
+    }
+
+    .bx-menu {
+        display: block;
+    }
+
+    .nav-logo h1 {
+        color: #3A3A3A;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    /* banner */
+
+    .banner {
+        flex-direction: column-reverse;
+        margin-bottom: 100px;
+    }
+
+    .banner .banner-colum-1 h1 {
+        font-size: 1.7rem;
+        line-height: 35px;
+        text-align: center;
+    }
+    
+    .banner .banner-colum-1 p {
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .banner-colum-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner-colum-2 img {
+        width: 100%;
+    }
+}
