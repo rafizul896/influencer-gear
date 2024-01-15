@@ -182,9 +182,33 @@ nav i {
     color: #5E6366;
 }
 
-.reating i{
+.reating i {
     color: #FB8200;
 }
+
+.more {
+    margin-top: 55px;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.more a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: rgba(224, 44, 109, 0.87);
+    font-size: 16px;
+    font-weight: 700;
+    position: absolute;
+    right: 0;
+}
+
+.more i {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
 
 /* responsive */
 
@@ -256,6 +280,29 @@ nav i {
     .popular-collection {
         grid-template-columns: repeat(1, 1fr);
         margin-top: 30px;
+    }
+
+    .popular-collection h2 {
+        color: #18191F;
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    .popular-collection h3 {
+        color: rgba(0, 0, 0, 0.87);
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .popular-collection p {
+        color: #787885;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.252px;
+    }
+
+    .reating {
+        color: #18191F;
     }
 
 }
