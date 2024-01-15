@@ -188,7 +188,6 @@ nav i {
 
 .more {
     margin-top: 55px;
-    margin-bottom: 100px;
     position: relative;
 }
 
@@ -209,6 +208,85 @@ nav i {
     font-weight: 600;
 }
 
+/* featured start here*/
+
+.featured {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    margin-top: 200px;
+}
+
+.featured-colum-1 img {
+    width: 100%;
+}
+
+.featured-colum-2 h1 {
+    color: #0A0826;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.featured-colum-2 p {
+    color: #6C6C6C;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 16px 0;
+    width: 501px;
+}
+
+.featured-colum-2 button {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: .25rem;
+    background: #E02C6D;
+    padding: 10px 24px;
+    border: none;
+    display: flex;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.featured-colum-2 button i {
+    font-size: 1.5rem;
+}
+
+/* Footer */
+
+footer {
+    background: #0A0826;
+    margin-top: 100px;
+    padding: 50px 0;
+}
+
+.foot h1 {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.foot p {
+    color: #D9DBE1;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    margin: 3px 0;
+}
+
+.foot-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 17px;
+    gap: 16px;
+}
+
+.foot-icon img {
+    cursor: pointer;
+}
 
 /* responsive */
 
@@ -303,6 +381,40 @@ nav i {
 
     .reating {
         color: #18191F;
+    }
+
+    /* featured */
+
+    .featured {
+        flex-direction: column;
+    }
+
+    .featured-colum-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .featured-colum-2 h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .featured-colum-2 p {
+        width: 100%;
+        font-size: .9rem;
+        text-align: center;
+        line-height: 28px;
+    }
+
+    /* Footer */
+
+    .foot h1 {
+        font-size: 1rem;
+    }
+
+    .foot p {
+        font-size: 10px;
     }
 
 }
